@@ -1,0 +1,25 @@
+{
+  "name": "it-talent-match",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IT業界特化 人材×企業マッチングプラットフォーム",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js --reset",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "exceljs": "^4.4.0",
+    "express": "^5.3.0",
+    "mammoth": "^1.13.0",
+    "multer": "^2.4.0",
+    "pdf-parse": "^1.1.1"
+  }
+}
